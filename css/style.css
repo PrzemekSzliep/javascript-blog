@@ -6,12 +6,16 @@
 }
 
 body {
-  background: #fff;
+  background: #06415E;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -39,9 +43,27 @@ body {
   margin-left: 10px;
 }
 
+@media (max-width: 960px) {
+  .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .sidebar {
   -ms-flex: 1 0 0px;
       flex: 1 0 0;
+}
+
+@media (max-width: 960px) {
+  .sidebar {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+}
+
+.sidebar a {
+  color: #9a0874;
 }
 
 .posts {
@@ -59,6 +81,7 @@ body {
 
 /* Logo */
 .logo {
+  color: #FFC15E;
   font-family: "Sacramento", cursive;
   font-weight: 400;
   font-size: 104px;
@@ -88,11 +111,26 @@ body {
 
 /* Post */
 .post {
-  display: none;
+  transition: all 0.4s ease;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
 }
 
 .post.active {
-  display: block;
+  opacity: 1;
+  position: relative;
+  z-index: 3;
+}
+
+.post-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.post p {
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .post-author {

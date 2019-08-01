@@ -1,6 +1,6 @@
 'use strict';
 
-function titleClickHandler(event){
+function titleClickHandler(event) {
     event.preventDefault();
     const clickedElement = this;
     console.log('Link was clicked!');
@@ -36,7 +36,7 @@ function titleClickHandler(event){
 
     /* [DONE\ add class 'active' to the correct article */
 
-    article.classList.add('active')
+    article.classList.add('active');
 }
 
 
@@ -68,7 +68,7 @@ function generateTitleLinks() {
 
         /* create HTML of the link */
 
-        const linkHTML = '<li><a href="#'+ articleId +'"><span>' + articleTitle + '</span></a></li>';
+        const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
         console.log(linkHTML);
 
         /* insert link into titleList */
@@ -85,8 +85,8 @@ generateTitleLinks();
 
 
 const links = document.querySelectorAll('.titles a');
-console.log(links)
+console.log(links);
 
-for(let link of links){
+for (let link of links) {
     link.addEventListener('click', titleClickHandler);
 }
