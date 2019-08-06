@@ -189,7 +189,7 @@ function tagClickHandler(event) {
 
     console.log('href: ' + href);
     const targetTags = document.querySelectorAll('a[href="' + href + '"]');
-    console.log(targetTags)''
+    console.log(targetTags);
 
     /* START LOOP: for each found tag link */
 
