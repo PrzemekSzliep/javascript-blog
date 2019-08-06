@@ -187,9 +187,9 @@ function tagClickHandler(event) {
 
     /* find all tag links with "href" attribute equal to the "href" constant */
 
-    console.log('href: ' + href)
+    console.log('href: ' + href);
     const targetTags = document.querySelectorAll('a[href="' + href + '"]');
-    console.log(targetTags)
+    console.log(targetTags)''
 
     /* START LOOP: for each found tag link */
 
@@ -321,9 +321,9 @@ function authorClickHandler(event) {
 
     /* find all tag links with "href" attribute equal to the "href" constant */
 
-    console.log('href: ' + href)
+    console.log('href: ' + href);
     const targetAuthors = document.querySelectorAll('a[href="' + href + '"]');
-    console.log(targetAuthors)
+    console.log(targetAuthors);
 
     /* START LOOP: for each found tag link */
 
@@ -345,4 +345,4 @@ function authorClickHandler(event) {
 }
 
 generateAuthors();
-addClickListenersToAuthors()
+addClickListenersToAuthors();
