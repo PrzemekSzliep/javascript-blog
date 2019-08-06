@@ -133,6 +133,19 @@ a {
   line-height: 26px;
 }
 
+.post-tags li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.post-tags li a {
+  color: #FFC15E;
+}
+
+.post-author a {
+  color: #9a0874;
+}
+
 .post-author {
   font-style: italic;
 }

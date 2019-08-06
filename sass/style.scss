@@ -179,6 +179,22 @@ a {
         font-size: 18px;
         line-height: 26px;
     }
+
+    &-tags {
+        li {
+            display: inline-block;
+            margin-right: 5px;
+
+            a {
+                color: $color-one;
+            }
+        }
+    }
+    &-author {
+        a {
+            color: $color-two;
+        }
+    }
 }
 
 .post-author {
