@@ -189,7 +189,7 @@ function generateTags() {
             html = html + tagHTML;
 
             /* [NEW] check if this link is NOT already in allTags */
-            if (!allTags.hasOwnProperty(tag)){
+            if (!allTags[tag]){
                 /* [NEW] add tag to allTags object */
                 allTags[tag] = 1;
             } else {
@@ -351,7 +351,7 @@ function generateAuthors() {
         allAuthorsData.authors.push({
             author: articleAuthor,
         });
-        console.log(allAuthorsData)
+        console.log(allAuthorsData);
 
         if (allAuthors.indexOf(authorHTML) == -1) {
             allAuthors.push(authorHTML);
